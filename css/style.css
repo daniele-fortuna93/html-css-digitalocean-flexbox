@@ -1,0 +1,84 @@
+/* reset */
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+/* reset */
+/* /mix */
+.bg__grey{
+  background-color: #f3f5f9;
+}
+.display__flex{
+  display: flex;
+}
+.text-center{
+  text-align: center;
+}
+/* /mix */
+/* typo */
+h6{
+  color: #5b6987;
+  font-size: 18px;
+  text-transform: uppercase;
+  margin: 20px 0;
+}
+/* /typo */
+/* main__logo */
+#main__logo{
+  padding: 50px 0;
+}
+.main__logo__container{
+  width: 80%;
+  min-width: 1100px;
+  max-width: 1300px;
+  margin: 40px auto 0;
+  justify-content: space-between;
+  align-items: baseline;
+}
+.main__logo__box{
+  flex-basis: calc(100% / 6);
+  text-align: center;
+}
+.main__logo__box img{
+  width: 90%;
+  max-width: 180px;
+  vertical-align: middle;
+}
+/* /main__logo */
+/* responsive */
+@media screen and (max-width:1199px) {
+  .main__logo__container{
+    min-width: 700px;
+    max-width: 990px;
+    flex-wrap: wrap;
+  }
+  .main__logo__box{
+    flex-basis: calc(100% / 3);
+  }
+  .main__logo__box img{
+    width: 60%;
+    vertical-align: middle;
+  }
+}
+@media screen and (max-width:991px) {
+  .main__logo__container{
+    min-width: 500px;
+    max-width: 765px;
+    flex-wrap: wrap;
+  }
+  .main__logo__box{
+    flex-basis: calc(100% / 2);
+  }
+  .main__logo__box img{
+    width: 50%;
+    vertical-align: middle;
+  }
+}
+@media screen and (max-width:767px) {
+  .main__logo__container{
+    min-width: 300px;
+    display: block;
+  }
+}
+/* responsive */
