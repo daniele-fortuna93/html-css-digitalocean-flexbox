@@ -6,6 +6,14 @@
 }
 /* reset */
 /* /mix */
+.mb_10{
+  margin-bottom: 10px;
+}
+.width__container{
+  width: 80%;
+  min-width: 1100px;
+  max-width: 1300px;
+}
 .bg__grey{
   background-color: #f3f5f9;
 }
@@ -15,23 +23,63 @@
 .text-center{
   text-align: center;
 }
+.title{
+  margin: 20px 0;
+  padding: 0 40px;
+}
+#main__logo,
+#main__description{
+  padding: 50px 0;
+}
 /* /mix */
 /* typo */
+body{
+  font-family: 'Roboto', sans-serif;
+}
+h2{
+  font-size: 36px;
+  color: #031b4e;
+  margin: 20px 0;
+}
+h5{
+  font-size: 18px;
+  color: #031b4e;
+}
 h6{
   color: #5b6987;
   font-size: 18px;
   text-transform: uppercase;
-  margin: 20px 0;
+}
+.section__p{
+  color: #5b6987;
+  font-size: 20px;
+  font-weight: 300;
+  margin-top: 10px;
 }
 /* /typo */
-/* main__logo */
-#main__logo{
-  padding: 50px 0;
+/* btn */
+.btn{
+  border: none;
 }
+.btn:focus,
+.btn:hover{
+  outline: none;
+  border-left: 1px solid #006aff;
+  cursor: pointer;
+}
+
+.btn__description{
+  display: block;
+  margin-top: -1px;
+  border-left: 1px solid #ddd;
+  border-radius: 0;
+  background-color: transparent;
+  padding: 15px 10px;
+  color: rgba(3, 27, 78, 0.6);
+}
+/* /btn */
+/* main__logo */
 .main__logo__container{
-  width: 80%;
-  min-width: 1100px;
-  max-width: 1300px;
   margin: 40px auto 0;
   justify-content: space-between;
   align-items: baseline;
@@ -46,11 +94,29 @@ h6{
   vertical-align: middle;
 }
 /* /main__logo */
+/* main__description */
+.main__description__container{
+  margin: 40px auto 0;
+}
+.main__description__button{
+  flex-basis: 30%;
+}
+.main__description__box{
+  flex-wrap: wrap;
+  flex-basis: 70%;
+}
+.main__section__box{
+  flex-basis: 50%;
+  padding: 10px 15px 10px 0;
+}
+/* /main__description */
 /* responsive */
 @media screen and (max-width:1199px) {
-  .main__logo__container{
+  .width__container{
     min-width: 700px;
     max-width: 990px;
+  }
+  .main__logo__container{
     flex-wrap: wrap;
   }
   .main__logo__box{
@@ -62,10 +128,9 @@ h6{
   }
 }
 @media screen and (max-width:991px) {
-  .main__logo__container{
+  .width__container{
     min-width: 500px;
     max-width: 765px;
-    flex-wrap: wrap;
   }
   .main__logo__box{
     flex-basis: calc(100% / 2);
@@ -74,10 +139,24 @@ h6{
     width: 50%;
     vertical-align: middle;
   }
+  .main__description__container{
+    display: block;
+  }
+  .main__description__button{
+    flex-basis: 100%;
+    margin-bottom: 20px;
+  }
+  .main__section__box{
+    flex-basis: 100%;
+    padding: 20px 10px 20px 0;
+  }
 }
 @media screen and (max-width:767px) {
-  .main__logo__container{
+  .width__container{
     min-width: 300px;
+  }
+  .main__logo__container{
+
     display: block;
   }
 }
